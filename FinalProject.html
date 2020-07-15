@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Apple</title>
+        <link rel="shortcut icon" href="icons8-apple-logo-50.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            nav{
+                background-color: black;
+                opacity: 0.9;
+                width: 100%;
+                padding-top: 13px;
+                padding-bottom: 13px;
+                position: fixed;
+                top: 0;
+                z-index: 100;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                display:flex;
+                padding-left: 15vw;
+                padding-right: 15vw;
+                justify-content: space-around;
+            }
+            a{
+                color: #E0E0E0;
+                font-size: 13px;
+                font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            }
+            li a:hover {
+                color: white;
+                cursor: pointer;
+            }
+
+            img{
+                height: 18px;
+            }
+            #blue{
+                background-color: dodgerblue;
+                color: white;
+                width: 100%;margin-top: 48px;
+                padding-top: 13px;
+                padding-bottom: 13px;
+                font-size: 13px;
+                text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            }
+            #covid{
+                margin: 0%;
+            }
+            #covid:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            
+            #white{
+                background-color: white;
+                color: black;
+                width: 100%;
+                padding-top: 13px;
+                padding-bottom: 13px;
+                font-size: 13px;
+                text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            }
+            span{
+                color: #4c65c2;
+            }
+            span:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            #block1
+            {
+                background-color: black;
+                text-align: center;
+                margin: 0%;
+                padding-top: 30px;
+            }
+            body{
+                margin: 0%;
+                font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            }
+            #block2
+            {
+                text-align: center;
+                margin: 0%;
+                padding-top: 30px;
+            }
+            #block3
+            {
+                text-align: center;
+                margin: 0%;
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .column {
+                padding: 10px;
+                float: left;
+                width: 50%;
+                text-align: center;
+                position: relative;
+            }
+            .blacktitle{
+                padding-top: 20px;
+                color: black;
+                font-size: 52px;
+                font-display: block;
+                margin: 0%;
+            }
+            .whitetitle{
+                padding-top: 20px;
+                color: white;
+                font-size: 52px;
+                font-display: block;
+                margin: 0%;
+            }
+            .whitetop{
+                color: #E0E0E0;
+                text-align: center;
+                margin: 0%;
+                font-size: 26px;
+            }
+            .blacktop{
+                color: black;
+                text-align: center;
+                margin: 0%;
+                font-size: 26px;
+            }
+            .lightgray{
+                color: gray;
+                text-align: center;
+                font-size: 18px;
+                margin: 0%;
+            }
+            .learnmore{
+                text-align: center;
+                color: dodgerblue;
+                font-size: 20px;
+                margin-bottom: 0%;
+            }
+            .learn:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            .learn{
+                color: dodgerblue;
+            }
+            #img1{
+                text-align: center;
+                width: 70%;
+                height: auto;
+            }
+            #img2{
+                text-align: center;
+                width: 100%;
+                height: auto;
+            }
+            #img3{
+                text-align: center;
+                width: 40%;
+                height: auto;
+                position: relative;
+            }
+            .smallimg{
+                width: 100%;
+                height: auto;
+            }
+            .imgtext{
+                position: absolute;
+                top: 10px;
+                right : 60px;
+                left: 60px;
+                margin: 0%;
+            }
+            .imgstitle{
+                text-align: center;
+                font-size: 1.8vw;
+                padding-bottom: 10px;
+            }
+            .imgstitlew{
+                text-align: center;
+                font-size: 1.8vw;
+                color: white;
+                padding-bottom: 10px;
+            }
+            .link{
+                text-align: center;
+                color: dodgerblue;
+                font-size: 1vw;
+            }
+            .link:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            h3{
+                margin-bottom: 0%;
+                font-size: 2.8vw;
+                padding-bottom: 10px;
+            }
+            .wtext{
+                color: white;
+                margin-bottom: 0%;
+                font-size: 2.8vw;
+                padding-bottom: 10px;
+            }
+            footer{
+                background-color:ghostwhite;
+                width: 100%;
+            }
+            #bottom{
+                font-size: 12px;
+                width: 60%;
+                color: darkgray;
+                text-align: left;
+            }
+            .fRow {
+                display: flex;
+            }
+            .fColumn {
+                flex: 25%;
+            }
+            .topic{
+                color: black;
+                font-display: block;
+                font-size: 13px;
+            }
+            .link2{
+                color: dodgerblue;
+            }
+            .link2:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            .link3{
+                color= black;
+            }
+            .link3:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href=#blue><img id= logo src = "kisspng-neck-heart-apple-logo-5abdfce743b5f7.0891871315224004872774.png"></a></li>
+                <li><a>Mac</a></li>
+                <li><a>iPad</a></li>
+                <li><a>iPhone</a></li>
+                <li><a>Watch</a></li>
+                <li><a>TV</a></li>
+                <li><a>Music</a></li>
+                <li><a>Support</a></li>
+                <li><a><img id = search src= "icons8-search-50.png"></a></li>
+                <li><a><img id = bagg src= "icons8-lock-32.png"></a></li>
+            </ul>
+        </nav>
+        <div id=blue>
+            <p id=covid>Evaluate COVID‑19 symptoms and understand next steps ></p>
+        </div>
+        <div id=white>
+            <span>Shop online</span> and get free, no‑contact delivery, Specialist help and more.
+        </div>
+        <div id=block1>
+            <h2 class= whitetitle>iPhone SE</h2>
+            <p class= whitetop>Lots to love. Less to spend.<br>
+                Starting at $399.
+            <p>
+            <p class=lightgray>From $9.54/mo. or $229 with trade-in.</p>
+            <p class=learnmore><span class=learn>Learn more</span>&nbsp; >  &nbsp;&nbsp; <span class=learn>Buy</span> &nbsp;></p>
+            <img id=img1 src="fianalmain.png">
+        </div>
+        <div id=block2>
+            <h2 class= blacktitle>iPhone 11</h2>
+            <p class= blacktop>Just the right amount of everything.<p>
+            <p class=lightgray>From $8.70/mo. or $449 with trade-in.</p>
+            <p class=learnmore><span class=learn>Learn more</span>&nbsp; >  &nbsp;&nbsp; <span class=learn>Buy</span> &nbsp;></p>
+            <img id=img2 src="img2.png">
+        </div>
+        <div id=block3>
+            <h2 class= blacktitle>iPad Pro</h2>
+            <p class= blacktop>Your next computer is not a computer.<p>
+            <p class=learnmore><span class=learn>Learn more</span>&nbsp; >  &nbsp;&nbsp; <span class=learn>Buy</span> &nbsp;></p>
+            <img id=img3 src="img3.png">
+        </div>
+        <div class="row">
+            <div class="column">
+                <img class=smallimg src="img4.jpg">
+                <div class=imgtext><h3>Apple is taking action to fight systematic rascism</h3> <div class=link>Watch</div></div>
+            </div>
+            <div class="column">
+                <img class=smallimg src="img5.jpg">
+                <div class=imgtext><h3>iPhone + Watch</h3>
+                    <div class=imgstitle>Add them together.<br>Multiply their power.</div><div class=link>Learn more ></div></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img class=smallimg src="img6.jpg">
+                <div class=imgtext><h3 class=wtext>WWDC20<br>June 22-26</h3>
+                    <div class=imgstitlew>Join us for the first global, all online<br>Worldwide Developers Conference.</div>
+                    <div class=link>Learn more ></div></div>
+            </div>
+            <div class="column">
+                <img class=smallimg src="img7.jpg">
+                <div class=imgtext><h3>Watch</h3>
+                    <div class=imgstitle>Starting at $249<br> with eligible trade-in.</div><div class=link>Learn more > &nbsp;&nbsp; Buy ></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img class=smallimg src="img8.jpg">
+                <div class=imgtext><h3>Card</h3> 
+                <div class=imgstitle>The simplicity of Apple.<br>In a credit card.</div>
+                <div class=link>Learn more ></div></div>
+            </div>
+            <div class="column">
+                <img class=smallimg src="img9.jpg">
+                <div class=imgtext><h3>Apple's approach to<br>repening our stores.</h3>
+                <div class=link>Read the letter ></div></div>
+            </div>
+        </div>
+        <footer>
+            <center>
+                <div id=bottom>
+                    <br><br>
+                    <p>1. Trade In: Trade‑in values vary. iPhone 11 and iPhone 11 Pro promotional pricing is after trade‑in of iPhone 8 Plus and iPhone X in good condition. iPhone SE promotional pricing is after trade-in of iPhone 8 in good condition. Additional trade‑in values require purchase of a new iPhone, subject to availability and limits. Must be at least 18. Apple or its trade-in partners reserve the right to refuse or limit any Trade In transaction for any reason. In‑store trade‑in requires presentation of a valid, government-issued photo ID (local law may require saving this information). Sales tax may be assessed on full value of new iPhone. Additional terms from Apple or Apple’s trade-in partners may apply. Monthly pricing: Available to qualified customers and requires 0% APR, 24-month installment loan with Citizens One or Apple Card Monthly Installments and iPhone activation with AT&T, Sprint, T-Mobile, or Verizon. Taxes and shipping not included. Additional Apple Card Monthly Installments terms are in the Customer Agreement. Additional iPhone Payments terms are here.</p>
+                    <br>
+                    <p>2. Trade‑in values vary. Apple Watch Series 5 promotional pricing is after trade‑in of Apple Watch Series 4 in good condition. Additional trade‑in values require purchase of a new Apple Watch, subject to availability and limits. Must be at least 18. Apple or its trade-in partners reserve the right to refuse or limit any Trade In transaction for any reason. In‑store trade‑in requires presentation of a valid, government-issued photo ID (local law may require saving this information). Sales tax may be assessed on full value of new Apple Watch. Additional terms from Apple or Apple’s trade-in partners may apply. Offer is available for a limited time only.
+                    </p><br>
+                    <p>Magic Keyboard sold separately.</p>
+                    <br><br>
+                    <hr>
+                    <br><br>
+                    <div class="fRow">
+                        <div class="fColumn">
+                            <p class=topic>Shop and Learn</p>
+                                Mac<br><br>
+                                iPad<br><br>
+                                iPhone<br><br>
+                                Watch<br><br>
+                                TV<br><br>
+                                Music<br><br>
+                                AirPods<br><br>
+                                HomePod<br><br>
+                                iPod touch<br><br>
+                                Accessories<br><br>
+                                Gift Cards<br><br>
+                        </div>
+                        <div class="fColumn">
+                            <p class=topic>Services</p>
+                                Apple Music<br><br>
+                                Apple News+<br><br>
+                                iPhone<br><br>
+                                Apple TV+<br><br>
+                                Apple Arcade<br><br>
+                                Apple Books<br><br>
+                                Apple Card<br><br>
+                                iCloud<br><br>
+                            <p class=topic>Account</p>
+                                Manage your Apple ID <br><br>
+                                Apple Store Account<br><br>
+                                iCloud.com<br><br>
+                        </div>
+                        <div class="fColumn">
+                            <p class=topic>Apple Store</p>
+                                Find a Store<br><br>
+                                Store Online<br><br>
+                                Genius Bar<br><br>
+                                Today at Apple<br><br>
+                                Apple Camp<br><br>
+                                Field Trip<br><br>
+                                Apple Store App<br><br>
+                                Refurbished and Clearance<br><br>
+                                Financing<br><br>
+                                Apple Trade In<br><br>
+                                Order Status<br><br>
+                                Shopping Help<br><br>
+                        </div>
+                        <div class="fColumn">
+                            <p class=topic>For Business</p>
+                            Apple and Business<br><br>
+                            Shop for Business<br><br>
+                            <p class=topic>For Education</p>
+                            Apple and Education<br><br>
+                            Shop for K-12<br><br>
+                            Shop for college<br><br>
+                            <p class=topic>For Healthcare</p>
+                            Apple in Healthcare<br><br>
+                            Health on Apple Watch<br><br>
+                            Health records on iPhone<br><br>
+                            <p class=topic>For Government</p>
+                            Shop for Government<br><br>
+                            Shop for Veterans and Military<br><br>
+                        </div>
+                        <div class="fColumn">
+                            <p class=topic>Apple Values</p>
+                            Accessibility<br><br>
+                            Education<br><br>
+                            Environment<br><br>
+                            Inclusion and Diversity<br><br>
+                            Privacy<br><br>
+                            Superior Responsibility<br><br>
+                            <p class=topic>About Apple</p>
+                            Newsroom<br><br>
+                            Apple Leadership<br><br>
+                            Job Opportunities<br><br>
+                            Investors<br><br>
+                            Events<br><br>
+                            Contact Apple<br><br>
+                        </div>
+                    </div>
+                    <br>
+                    <p id=contact>More ways to shop: <span class=link2>Find an Apple Store</span> or <span class=link2>other retailer</span> near you. Or call 1-800-MY-APPLE.</p>
+                    <hr>
+                    <p>Copyright © 2020 Apple Inc. All rights reserved.&nbsp;&nbsp;&nbsp;<span class=link3>Privacy Policy</span>&nbsp;|&nbsp;<span class=link3>Terms of Use</span>&nbsp;|&nbsp;<span class=link3>Sales and Refunds</span>&nbsp;|&nbsp;<span class=link3>Legal Site Map</span></p>
+                    <br>
+                </div>
+            </center>
+        </footer>
+    </body>
+</html>
